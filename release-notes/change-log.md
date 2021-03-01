@@ -6,6 +6,24 @@ description: This article tracks the changes and updates to Upsolver.
 
 ## 2021
 
+### 2021/03/01
+
+* Monitoring: Added three metrics to Hive Metastore Outputs
+  * `partitions-delay` - The delay between now and the last partition time
+  * `data-loading-delay` - The delay on loading data to the metastore
+  * `partitions-count` - Number of partitions in the table
+* IS\_DUPLICATE and Lookup from Data Sources: Don't omit key columns for new versions
+* Avro: Fixed escaping of `[]` in array namespaces
+  * Fixes a bug in Snowflake Output with VARIANT column output with arrays
+
+### 2021/02/23
+
+* Azure: Support billing SaaS offering
+* DNS: Ability to sync Route53 records with private IP addresses for customers with own Spotinst Account
+* SSO/bugfix: attach endpoints don't have permissions
+* Partners: Support exporting logs and monitoring to external domain
+* Free Plan: Support upgrading account
+
 ### 2021/01/04
 
 * Snowflake Output: Configurable DbDecimal
