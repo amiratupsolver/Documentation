@@ -123,6 +123,8 @@
     * [PostgreSQL data output](data-outputs-and-data-transformation/data-outputs/database-data-outputs/postgresql-data-output.md)
     * [Microsoft SQL Server data output](data-outputs-and-data-transformation/data-outputs/database-data-outputs/microsoft-sql-server-data-output.md)
     * [Elasticsearch data output](data-outputs-and-data-transformation/data-outputs/database-data-outputs/elasticsearch-data-output.md)
+    * [Dremio](data-outputs-and-data-transformation/data-outputs/database-data-outputs/dremio.md)
+    * [PrestoDB](data-outputs-and-data-transformation/data-outputs/database-data-outputs/prestodb.md)
   * [Upsolver data output](data-outputs-and-data-transformation/data-outputs/upsolver-output.md)
   * [HDFS data output](data-outputs-and-data-transformation/data-outputs/hdfs-data-output.md)
   * [Google Storage data output](data-outputs-and-data-transformation/data-outputs/google-storage-data-output.md)
