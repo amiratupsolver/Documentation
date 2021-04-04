@@ -98,7 +98,6 @@
 * [Kafka data source](connecting-data-sources/kafka-data-output.md)
 * [Google Cloud Storage data source](connecting-data-sources/google-cloud-storage-data-source.md)
 * [File upload data source](connecting-data-sources/additional-data-sources.md)
-* [CDC Data Sources](connecting-data-sources/cdc-data-sources.md)
 * [JDBC data source](connecting-data-sources/jdbc.md)
 * [HDFS data source](connecting-data-sources/hdfs-data-source.md)
 * [Data source UI](connecting-data-sources/data-source-ui-tour.md)
