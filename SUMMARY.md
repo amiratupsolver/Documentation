@@ -98,6 +98,8 @@
 * [Kafka data source](connecting-data-sources/kafka-data-output.md)
 * [Google Cloud Storage data source](connecting-data-sources/google-cloud-storage-data-source.md)
 * [File upload data source](connecting-data-sources/additional-data-sources.md)
+* [CDC Data Sources \(Debezium\)](connecting-data-sources/cdc-data-sources-debezium/README.md)
+  * [MySQL CDC Data Source](connecting-data-sources/cdc-data-sources-debezium/mysql-cdc-data-source.md)
 * [JDBC data source](connecting-data-sources/jdbc.md)
 * [HDFS data source](connecting-data-sources/hdfs-data-source.md)
 * [Data source UI](connecting-data-sources/data-source-ui-tour.md)

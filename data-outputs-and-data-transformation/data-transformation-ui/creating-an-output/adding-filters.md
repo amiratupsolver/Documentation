@@ -18,7 +18,7 @@ You can add whitelist and blacklist filters to a lookup table or an output based
 
 3. From the dropdown, select the **values** to use for each required **input**.   
 You can also click on the hierarchy icon![](../../../.gitbook/assets/screen-shot-2020-08-28-at-11.19.45-am.png)to review the available fields in your data.  
-Additionally, click on the add icon![](../../../.gitbook/assets/image%20%2891%29.png)to add another calculation within this function.
+Additionally, click on the add icon![](../../../.gitbook/assets/image%20%28108%29.png)to add another calculation within this function.
 
 4. Decide whether the **Filter Type** is:
 

@@ -12,7 +12,7 @@ To create a new support case, click the **Submit a request** button in the top r
 
 You’ll see the **Submit a request** form. Fill out all of the required fields and click **Submit** at the bottom of the page to create your support case.
 
-![](../.gitbook/assets/image%20%2850%29.png)
+![](../.gitbook/assets/image%20%28118%29.png)
 
 {% hint style="info" %}
 Be sure to select the correct **Priority**, because this determines the response time with your ticket. 

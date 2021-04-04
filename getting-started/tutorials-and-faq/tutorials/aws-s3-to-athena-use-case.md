@@ -78,7 +78,7 @@ If you wish, toggle the view from **UI** to **SQL** to edit the output directly 
 The data is stored in folders according to the time field and by default, this is set to **Daily**. Through the **Properties** tab, this can be set to **Yearly**, **Monthly**, **Daily**, or **Hourly**.
 {% endhint %}
 
-1. Click **Manage Partitions** and click the plus icon![](../../../.gitbook/assets/image%20%2891%29.png).  
+1. Click **Manage Partitions** and click the plus icon![](../../../.gitbook/assets/image%20%28108%29.png).  
 **Note:** If you had already have a suitable date source field, you could select it. In this use case, we will create a field.
 
 2. Select **Date** and then select the desired function. In this example, we will be using`PARSE_DATE(string date, string format)`.  

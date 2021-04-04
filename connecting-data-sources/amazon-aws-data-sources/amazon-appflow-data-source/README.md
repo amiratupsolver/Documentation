@@ -61,7 +61,7 @@ Make sure you're logged into the AWS account running AppFlow.
 
 3. You may choose any sources Choose **Google Analytics** as your source and click on **Connect**.
 
-![](../../../.gitbook/assets/image%20%28184%29.png)
+![](../../../.gitbook/assets/image%20%28186%29.png)
 
 4. Enter your Google Analytics information, give the connection a name and click on **Continue**. 
 
@@ -73,7 +73,7 @@ If you don't know your Google Analytics Client ID and Client Secret, please foll
 
 5. Fill out the required fields for your source. For Google Analytics, you will see AppFlow requesting access to your Google account.
 
-![](../../../.gitbook/assets/image%20%28195%29.png)
+![](../../../.gitbook/assets/image%20%28206%29.png)
 
 6. Choose Upsolver as your destination. From the first section - _Create an Amazon Appflow data source connection_ step 4, you've created an AppFlow connection with BUCKET NAME called googleanalytics. Behind the scenes, it automatically created an Amazon S3 bucket called **upsolver-appflow-googleanalytics**. This bucket will show up as an option when you create an Upsolver destination. Select the **upsolver-appflow-googleanalytics** bucket.
 
