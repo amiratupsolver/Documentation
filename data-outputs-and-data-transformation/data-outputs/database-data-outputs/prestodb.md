@@ -6,6 +6,12 @@ description: >-
 
 # PrestoDB
 
+{% hint style="info" %}
+### **What is PrestoDB?**
+
+Presto is an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes.
+{% endhint %}
+
 ## Create a new data output
 
 1. Create a new data output by clicking on **Output** and **New Output**.
