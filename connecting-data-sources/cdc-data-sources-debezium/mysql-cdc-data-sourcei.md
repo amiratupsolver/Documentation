@@ -6,7 +6,9 @@ description: >-
 
 # MySQL CDC data source
 
-Currently the following MySQL databases versions are supported: 5.7, 8. This includes managed DB instances via AWS RDS.
+### Supportability
+
+Currently the following MySQL databases versions are supported: 5.7 and 8. This includes managed DB instances via AWS RDS.
 
 ### Prerequisites
 
