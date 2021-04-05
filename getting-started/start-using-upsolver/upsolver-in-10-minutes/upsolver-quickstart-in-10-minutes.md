@@ -20,7 +20,9 @@ The [free Community Edition](https://app.upsolver.com/signup/free) offers limite
 
 ## Upsolver Quickstart
 
-Welcome to Upsolver! After signing up and logging in the Community Edition, you will see the Quickstart's welcome screen. 
+Welcome to Upsolver! After signing up and logging in the Community Edition, you will see the Quickstart's welcome screen.  Choose **Sandbox** for this Quickstart.
+
+![](../../../.gitbook/assets/image%20%2859%29.png)
 
 ### Create a Data Source
 
