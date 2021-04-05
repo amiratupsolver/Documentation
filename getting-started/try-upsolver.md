@@ -16,7 +16,7 @@ You can also use Upsolver through [AWS Marketplace](https://aws.amazon.com/marke
 
 ## Try Upsolver for free - Community
 
-1. Go to [https://app.upsolver.com/signup/free](https://app.upsolver.com/signup/free)
+1. Go to [https://app.upsolver.com/signup/](https://app.upsolver.com/signup/)
 
 2. Enter your contact details and click **Sign Up**. An email message will be sent to the email account specified for verification.
 
