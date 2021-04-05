@@ -12,6 +12,10 @@ description: >-
 Presto is an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes.
 {% endhint %}
 
+### Prerequisite
+
+You must have Glue Catalog integrated with PrestoDB. 
+
 ## Create a new data output
 
 1. Create a new data output by clicking on **Output** and **New Output**.
@@ -44,9 +48,13 @@ There are many powerful capabilities available such as **aggregations**, **filte
 
 6. Make sure an existing PrestoDB database is available for the output. If not, create a new database. 
 
-7. Fill out the PrestoDB database and table information for output then click **Next**.
+7. If you have not configured a glue catalog connection, create a glue catalog connection by clicking on **Create your first Glue Data Catalog Connection**
 
-8. Choose the time period for the data that you want to load then click **Deploy**.
+![](../../../.gitbook/assets/image%20%2850%29.png)
+
+8. Fill out the PrestoDB database and table information for output then click **Next**.
+
+9. Choose the time period for the data that you want to load then click **Deploy**.
 
 ## 
 
