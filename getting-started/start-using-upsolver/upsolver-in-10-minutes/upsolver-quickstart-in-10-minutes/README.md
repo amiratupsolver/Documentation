@@ -2,7 +2,7 @@
 description: This guide provides a quick tour of Upsolver for first time users.
 ---
 
-# Upsolver Quickstart in 5 Minutes
+# Upsolver Quickstart in 5 minutes
 
 ## Welcome to Upsolver!
 
