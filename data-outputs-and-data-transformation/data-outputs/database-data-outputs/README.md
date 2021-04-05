@@ -4,7 +4,7 @@ description: >-
   output options in Upsolver.
 ---
 
-# Database data outputs
+# Data lake / database data outputs
 
 ## Database output guides:
 
@@ -13,4 +13,13 @@ description: >-
 * [PostgreSQL](postgresql-data-output.md)
 * [Microsoft SQL Server](microsoft-sql-server-data-output.md)
 * [Elasticsearch](elasticsearch-data-output.md)
+
+
+
+## Data lake output guides:
+
+* [Dremio](dremio.md)
+* [PrestoDB](prestodb.md)
+
+
 

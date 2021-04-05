@@ -1,23 +1,23 @@
-# CDC Data Sources \(Debezium\)
+# CDC data sources \(Debezium\)
 
-## CDC Data Sources
+### CDC Data Sources
 
-Upsolver supports ingesting CDC data from relational databases such as MySql or Postgres. Upsolver does this by running a [Debezium Engine](https://debezium.io/documentation/reference/development/engine.html) under the hood to connect to the databases Binlog and ingest any change.
+Upsolver supports ingesting CDC data from relational databases such as MySQL or PostgreSQL. Upsolver provides CDC capabilities by running a [Debezium Engine](https://debezium.io/documentation/reference/development/engine.html) under the hood to connect to the databases binlog or WAL. The connectors automatically detect and ingest any change.
 
-### Event Format
+#### Event Format
 
 Upsolver will read Debezium Change events with the following fields:
 
-* Before -The state of the row before the change that was applied in the current event. This can be null if this row is new.
-* After - The state of the row after the change that was applied in the current event.
-* Source - Information about the change event. Including things such as what binlog file it came from, and it's sequence number or position within the file. The Source Table and Database will also be here.
-* op - The change type. It can be:
-  * 'r' - Read events \(when loading the initial data\)
-  * 'c' - Create
-  * 'u' - Update
-  * 'd' - Delete
+* **`before`** -The state of the row before the change that was applied in the current event. This can be null if this row is new.
+* **`after`** - The state of the row after the change that was applied in the current event.
+* **`source`** - Information about the change event. Including things such as what binlog file it came from, and it's sequence number or position within the file. The Source Table and Database will also be here.
+* **`op`** - The change type. The options are:
+  * `r` - Read events \(when loading the initial data\)
+  * `c` - Create
+  * `u` - Update
+  * `d` - Delete
 
-Below is a sample event:
+#### Example 1:
 
 ```javascript
 {
@@ -53,13 +53,11 @@ Below is a sample event:
 }
 ```
 
-This event represents a new row being added to the table. You can tell this by the op type being "c". In this case we added a new sale to the "sales" table in the "prod" database \(can be seen in the "source" information\).
+This example event represents a new row being added to the table. You can tell this by the op type being `c`. In this case we added a new sale to the `sales` table in the `prod` database \(this can be seen in the `source` information\).
 
+#### Supported Databases
 
-
-### Supported Databases
-
-Currently the following databases and versions are supported
+Currently the following databases and versions are supported:
 
 | Database | Version | AWS RDS Supported? |
 | :--- | :--- | :--- |
