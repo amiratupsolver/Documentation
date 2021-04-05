@@ -1,3 +1,9 @@
+---
+description: >-
+  This article provides an introduction to how Upsolver works with MySQL change
+  data capture data sources.
+---
+
 # MySQL CDC data source
 
 Currently the following MySQL databases versions are supported: 5.7, 8. This includes managed DB instances via AWS RDS.
