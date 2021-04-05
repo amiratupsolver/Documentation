@@ -33,39 +33,64 @@ Upsolver will read Debezium Change events with the following fields:
 
 ```javascript
 {
-    "time": "04/04/2021, 11:45:00",
-    "data": {
-        "ts_ms": 1617525879250,
-        "op": "c",
-        "after": {
-            "id": "188283-21202",
-            "cost": 4.2,
-            "item_id": 10
-        },
-        "source": {
-            "name": "debezium",
-            "db": "prod",
-            "row": 0,
-            "server_id": 0,
-            "snapshot": "true",
-            "table": "sales",
-            "version": "1.4.2.Final",
-            "ts_ms": 0,
-            "file": "mysql-bin-changelog.008019",
-            "pos": 156,
-            "connector": "mysql"
-        }
+    "ts_ms": 1617525879250,
+    "op": "c",
+    "after": {
+        "id": "188283-21202",
+        "cost": 4.2,
+        "item_id": 10
     },
-    "headers": {
-        "head": {
-            "X-File-Compression": "Auto Detect (Supports ZIP, GZip, Tar, Snappy and AWS KPL)",
-            "index": 1
-        }
+    "source": {
+        "name": "debezium",
+        "db": "prod",
+        "row": 0,
+        "server_id": 0,
+        "snapshot": "true",
+        "table": "sales",
+        "version": "1.4.2.Final",
+        "ts_ms": 0,
+        "file": "mysql-bin-changelog.008019",
+        "pos": 156,
+        "connector": "mysql"
     }
 }
 ```
 
 This example event represents a new row being added to the table. You can tell this by the op type being `c`. In this case we added a new sale to the `sales` table in the `prod` database \(this can be seen in the `source` information\).
+
+#### Example 2:
+
+```javascript
+{
+    "ts_ms": 1617525879252,
+    "op": "u",
+    "before": {
+        "id": "188283-21202",
+        "cost": 4.2,
+        "item_id": 10
+    },
+    "after": {
+        "id": "188283-21202",
+        "cost": 5,
+        "item_id": 10
+    },
+    "source": {
+        "name": "debezium",
+        "db": "prod",
+        "row": 0,
+        "server_id": 0,
+        "snapshot": "true",
+        "table": "sales",
+        "version": "1.4.2.Final",
+        "ts_ms": 0,
+        "file": "mysql-bin-changelog.008019",
+        "pos": 157,
+        "connector": "mysql"
+    }
+}
+```
+
+In this case we received an updated event for the event in Example 1. We can see the old values in "before" and the new updated values in "after".
 
 #### Supported Databases
 
