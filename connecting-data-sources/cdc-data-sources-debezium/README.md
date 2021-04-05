@@ -1,3 +1,9 @@
+---
+description: >-
+  This article provides an introduction to how Upsolver works with change data
+  capture data sources.
+---
+
 # CDC data sources \(Debezium\)
 
 {% hint style="info" %}
