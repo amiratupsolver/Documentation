@@ -40,8 +40,6 @@ There are many powerful capabilities available such as **aggregations**, **filte
 
 7. Fill out the PrestoDB database and table information for output then click **Next**.
 
-![](../../../.gitbook/assets/screen-shot-2020-09-05-at-11.21.34-am.png)
-
 8. Choose the time period for the data that you want to load then click **Deploy**.
 
 ## 
