@@ -33,7 +33,7 @@ If you are using AWS RDS you will need to:
 1. Make sure that [Automated Backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html) are enabled. If they are not enabled the binlog will be disabled regardless of the parameter group settings.
 2. Change the binlog mode to `ROW` in the parameter group settings for the cluster:
    1. Create new parameter group based on the base group that matches your DB version.
-   2. Change `binlog_format` to `ROW`
+   2. Change `BINGLOG_FORMAT` to `ROW`
    3. Change the DB Cluster to use the new parameter group and apply the changes. 
 
 ### Creating a MySQL CDC Data Source
