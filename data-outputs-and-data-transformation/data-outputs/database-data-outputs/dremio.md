@@ -1,4 +1,16 @@
+---
+description: >-
+  This article provides an introduction to Dremio along with a guide on creating
+  an Dremio output using Upsolver.
+---
+
 # Dremio
+
+{% hint style="info" %}
+### **What is Dremio?**
+
+**Dremio is a data lake query engine that delivers  fast query speed and a self-service semantic layer operating directly against a data lake storage.**
+{% endhint %}
 
 ## Create a new data output
 
