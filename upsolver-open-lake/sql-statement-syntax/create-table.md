@@ -69,7 +69,7 @@ Primary keys are the IDs used as the keys to match records to determine whether 
 
 #### partitioned\_by 
 
-Open Lake allows tables to be partitioned by how users typically access their day. In the example, the `orders` table first partitions by its region and within each region, partitioned by `orderdate`. 
+It allows tables to be partitioned by how users typically access their day. In the example, the `orders` table first partitions by its region and within each region, partitioned by `orderdate`. 
 
 #### compute\_cluster
 
@@ -81,7 +81,7 @@ Time defined to keep data in the table. It can be by minutes, hours or days. Dat
 
 #### storage\_location
 
-Amazon S3 locations are supported today by Open Lake. The user needs to have an appropriate S3 connection defined. If a valid connection is missing, Open Lake will ask the user to create a connection and run the `CREATE` statement again.
+Amazon S3 locations are supported today. The user needs to have an appropriate S3 connection defined. If a valid connection is missing, it will ask the user to create a connection and run the `CREATE` statement again.
 
 ## Additional examples
 
