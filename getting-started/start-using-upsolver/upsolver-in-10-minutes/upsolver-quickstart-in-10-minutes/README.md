@@ -22,19 +22,19 @@ The [free Community Edition](https://app.upsolver.com/signup/free) offers limite
 
 Welcome to Upsolver! After signing up and logging in the Community Edition, you will see the Quickstart's welcome screen.  Choose **Sandbox** for this Quickstart.
 
-![](../../../../.gitbook/assets/image%20%28102%29.png)
+![](../../../../.gitbook/assets/image%20%28120%29.png)
 
 ### Create a Data Source
 
 1. Welcome screen: start your Upsolver journey by creating a Data Source. We have set up sample streaming data in an Amazon S3 bucket with new files constantly being written to the bucket. Note: Upsolver provides many built-in [Data Sources.](https://integ.upsolver.com/inputs/create)  Click **Create Data Source** to connect Upsolver to your data source.
 
-![Welcome to Upsolver!](../../../../.gitbook/assets/image%20%28242%29.png)
+![](../../../../.gitbook/assets/image%20%28122%29.png)
 
-2. Define data source bucket: select the Amazon S3 bucket that hosts where your data is located. Leave this option as the default value of **upsolver-tutorial-orders** Note: Upsolver supports all data formats. Click on **NEXT**.
+2. Define data source bucket: select the Amazon S3 bucket that hosts where your data is located. Leave this option as the default value of **upsolver-tutorials-orders** Note: Upsolver supports all data formats. Click on **NEXT**.
 
 ![](../../../../.gitbook/assets/image%20%28240%29.png)
 
-3. Define data source format: Upsolver provides many options to parse your data. The Quickstart provides a subset of the options. Leave all values as default: `GLOBAL PATTERN` is set to `*`. It means Upsolver will parse everything in a S3 bucket. `DATE FORMAT` is `yyyy/MM/dd/HH`. This is how objects are stored in the folders. For example: `s3://upsolver-tutorial-orders/2021/01/16/15/35/<file_name>` 
+3. Define data source format: Upsolver provides many options to parse your data. The Quickstart provides a subset of the options. Leave all values as default: `GLOBAL FILE PATTERN` is set to `*`. It means Upsolver will parse everything in a S3 bucket. `DATE FORMAT` is `yyyy/MM/dd/HH`. This is how objects are stored in the folders. For example: `s3://upsolver-tutorial-orders/2021/01/16/15/35/<file_name>` 
 
 You may see a sample of the files from defined bucket displayed on the right side of the screen. Optionally, you can identify the time you want to start ingesting from. We will **leave all values as default** and click on **NEXT**.
 
@@ -46,21 +46,21 @@ You may see a sample of the files from defined bucket displayed on the right sid
 
 5. You have successfully created your first data source! 🎉 You will find a list of parsed fields on the left and data demographics and statistics as well. Click on each field to view the field's statistics.
 
-![](../../../../.gitbook/assets/image%20%28234%29.png)
+![](../../../../.gitbook/assets/image%20%2891%29.png)
 
 Upsolver offers much more than this Quickstart. [Contact Upsolver ](https://www.upsolver.com/schedule-demo)for a demo or a free POC with more compute power.
 
-### Create a Open Lake data output
+### Create a queryable data output
 
-1. Start creating the Open Lake Output: now we have a data source defined, click on **NEW OPEN LAKE OUTPUT** on the upper right hand corner to start transforming your data and output to Upsolver's Open Lake.
+1. Start creating the Upsolver Query Output: now we have a data source defined, click on **NEW TABLE OUTPUT** on the upper right hand corner to start transforming your data and output to Upsolver Query Output.
 
-![](../../../../.gitbook/assets/image%20%28232%29.png)
+![](../../../../.gitbook/assets/image%20%2896%29.png)
 
-2. Define the Open Lake Output: provide the data output with a `NAME` and define the `DATA SOURCES(s) -`where the data come from. We will use the data source created in the previous section called `upsolver-tutorials-orders`. For this Quickstart, we will write to a new table in the Open Lake environment. Leave all values as **default** and click on **NEXT**.
+2. Define the Queryable Output: provide the data output with a `NAME` and define the `DATA SOURCES(s) -`where the data comes from. We will use the data source created in the previous section called `upsolver-tutorials-orders`. For this Quickstart, we will write to a new table. Leave all values as **default** and click on **NEXT**.
 
 ![](../../../../.gitbook/assets/image%20%28237%29.png)
 
-### Add fields to your Open Lake output
+### Add fields to your output
 
 1. Add the following fields to your output by clicking on the **+** sign next to each field. These fields were parsed automatically when the Data Source was created. Leave **data.netTotal** and **data.salesTax** as **DOUBLE** when you map these fields to the output.
 
@@ -71,9 +71,7 @@ data.netTotal (DOUBLE)
 data.salesTax (DOUBLE)
 ```
 
-This step also allows you to change the name and data type of your fields when you output to your target system. After adding the fields, click on **NEXT**.
-
-![Add fields to your data output](../../../../.gitbook/assets/aiu4jyokwz.gif)
+This step also allows you to change the name and data type of your fields when you output to your target system. 
 
 2. Click on **Add Calculated Field** to perform a simple data transformation.
 
@@ -91,7 +89,7 @@ Upsolver offers 200+ built-in transformations functions. You may use the UI or S
 
 ![](../../../../.gitbook/assets/fvi5ljfnnb.gif)
 
-2. We can use the **SQL UI** to add a simple calculation directly in SQL instead of using the UI. Click over to the SQL tab. Note: changes the UI are automatically translated in the SQL statement. Changes in the SQL statement will be automatically reflected in the UI.
+2. We can use the **SQL UI** to add a simple calculation directly in SQL instead of using the UI. Click over to the SQL tab. Note: changes to the UI are automatically translated in the SQL statement. Changes in the SQL statement will be automatically reflected in the UI.
 
 ![](../../../../.gitbook/assets/image%20%28233%29.png)
 
@@ -145,7 +143,7 @@ SELECT PARTITION_TIME(partition_date) AS partition_date:TIMESTAMP,
 
 ### Explore transformed data in Open Lake worksheets
 
-1. Click the **CREATE WORKSHEET** button on upper right hand corner to start exploring the data that you've transformed and written to a table.
+1. Click the **CREATE WORKSHEET** button on the upper right hand corner to start exploring the data that you've transformed and written to a table.
 
 ![](../../../../.gitbook/assets/rgvgcj1ijn%20%281%29%20%281%29.gif)
 
@@ -163,7 +161,7 @@ You have now explored Upsolver by using sample data. You may integrate with your
 
 1. Navigate to **INTEGRATE NOW** from your Sandbox environment
 
-![](../../../../.gitbook/assets/image%20%2896%29.png)
+![](../../../../.gitbook/assets/image%20%28103%29.png)
 
 2. Choose the cloud provider of your preference. In this example, we're going to use AWS.
 
@@ -177,9 +175,9 @@ Make sure you're already logged into your AWS account. If applicable, disable th
 
 ![](../../../../.gitbook/assets/image%20%2863%29.png)
 
-4. Scroll down your do the your Create Stack page. **Check** the I acknowledge box and click on **Create stack**.
+4. Scroll down to your Create Stack page. **Check** the I acknowledge box and click on **Create stack**.
 
-![](../../../../.gitbook/assets/image%20%2891%29.png)
+![](../../../../.gitbook/assets/image%20%28102%29.png)
 
 5. The stack creation process might take a minute or two. Keep refreshing until you see **`CREATE_COMPLETE`**.
 
