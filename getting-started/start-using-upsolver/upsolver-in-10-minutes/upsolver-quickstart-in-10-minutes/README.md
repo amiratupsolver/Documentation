@@ -123,7 +123,7 @@ SELECT PARTITION_TIME(partition_date) AS partition_date:TIMESTAMP,
 
 ![](../../../../.gitbook/assets/veqfqcaiwo.gif)
 
-### Output processed data to Open Lake
+### Output processed data to a table
 
 1. Click on **RUN** on the upper right corner. Leave everything as its default values and provide a **TABLE NAME**. Click on **NEXT**.
 
