@@ -14,27 +14,31 @@ Upsolver Community is fully resourced; you are not required to supply any comput
 
 You can also use Upsolver through [AWS Marketplace](https://aws.amazon.com/marketplace/pp/B07T8JDQ57?ref_=srh_res_product_title). All of the options will allow you to ingest data to Amazon S3, perform transformations with simple SQL, and output to your favorite database or analytics tools—in minutes.
 
-## Try Upsolver for free - Community
+## Upsolver Community sandbox
 
 1. Go to [https://app.upsolver.com/signup/](https://app.upsolver.com/signup/)
 
+![](../.gitbook/assets/image%20%28241%29.png)
+
 2. Enter your contact details and click **Sign Up**. An email message will be sent to the email account specified for verification.
 
-3. Follow the [10 minute tutorial](start-using-upsolver/upsolver-in-10-minutes/) for an end-to-end quick tour of Upsolver
+3. Choose **Sandbox** option on the welcome page.
 
-## Try Upsolver for free - Dedicated compute
+![](../.gitbook/assets/image%20%28184%29.png)
+
+4. Follow the [5 minute tutorial](start-using-upsolver/upsolver-in-10-minutes/) for an end-to-end quick tour of Upsolver
+
+## Use Upsolver for free
 
 1. Go to [https://app.upsolver.com/signup](https://app.upsolver.com/signup)
 
-2. Enter your contact details and click **SIGN UP**. An email message will be sent to the email account specified for verification.
+![](../.gitbook/assets/image%20%28142%29.png)
 
-![](../.gitbook/assets/image%20%28249%29.png)
+2. Choose AWS or Azure \(this example uses AWS\)
 
-3. When you log in, you may choose between deploying in Amazon AWS or Microsoft Azure
+![](../.gitbook/assets/image%20%28195%29.png)
 
-If you don’t have access to your AWS or Azure account, you can [**send the page**](https://upsolver.gitbook.io/upsolver-1/getting-started/try-upsolver#send-this-page) to someone else on your team.
-
-4. You may choose between **Deploy to My AWS Account** which deploys Upsolver in your own VPC or **Multi-Tenant Deployment** - Upsolver hosts and manages the compute.  Click [here](upsolver-concepts/deployment-models.md) for more information. If you don't have administrative access, click on [SEND THIS PAGE](https://docs.upsolver.com/upsolver-1/getting-started/try-upsolver#send-this-page).  Make sure you allow appropriate access to your AWS account and click **CONTINUE**.
+3. You may choose between **Deploy to My AWS Account** which deploys Upsolver in your own VPC or **Multi-Tenant Deployment** - Upsolver hosts and manages the compute.  Click [here](upsolver-concepts/deployment-models.md) for more information. If you don't have administrative access, click on [SEND THIS PAGE](https://docs.upsolver.com/upsolver-1/getting-started/try-upsolver#send-this-page).  Make sure you allow appropriate access to your AWS account and click **CONTINUE**.
 
 ![](../.gitbook/assets/image%20%28244%29.png)
 
