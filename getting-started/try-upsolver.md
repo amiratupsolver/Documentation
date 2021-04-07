@@ -62,28 +62,15 @@ You can also use Upsolver through [AWS Marketplace](https://aws.amazon.com/marke
 
 1. Click **SEND THIS PAGE.**
 
+![](../.gitbook/assets/image%20%28253%29.png)
+
 2. \(Optional\) Add any **S3 Buckets Containing Your Data** and **Kinesis Streams Containing Your Data**.
+
+![](../.gitbook/assets/image%20%28250%29.png)
 
 3. Click **Generate Link**.
 
-4. Click **Copy** and then send the link to the relevant team member. This link can be pasted into the browser and used to create the required CloudFormation stack.[  
-](https://upsolver.gitbook.io/upsolver-1/)
+4. Click **Copy** and then send the link to the relevant team member. This link can be pasted into the browser and used to create the required CloudFormation stack.
 
-{% hint style="info" %}
-If you don’t have access to your AWS account, you can [**send the page**](try-upsolver.md#send-this-page) to someone else on your team.
-{% endhint %}
-
-7. Select a **region** and click **Continue**.
-
-{% hint style="info" %}
-By default, Upsolver deploys the servers for processing and running jobs on the Upsolver AWS account, but the data is never stored there.
-
-**See:** [Integrating Upsolver on your AWS account](start-using-upsolver/) if you would prefer to deploy the processing on your own AWS account.
-{% endhint %}
-
-8. Click **Launch Integration**.
-
-9. In the **AWS CloudFormation page**, check the **I acknowledge** statement and click **Create Stack**.
-
-10. Once the stack is successfully created \(this will take a couple of minutes; you will see that the status of your stack says 
+![](../.gitbook/assets/image%20%28252%29.png)
 
