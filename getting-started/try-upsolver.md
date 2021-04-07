@@ -4,11 +4,7 @@ description: >-
   Upsolver website.
 ---
 
-# Try Upsolver for free
-
-To help you get started with Upsolver, you can try it out for free. You can choose between [**Upsolver Dedicated Compute**](https://app.upsolver.com/signup) ****and [**Community**](https://app.upsolver.com/signup/free) subscriptions. Both options give you free Upsolver units \(UUs\), units of processing capability per hour based on VM instance type.
-
-Upsolver Dedicated Compute is more flexible, but Upsolver uses compute and S3 storage resources in your AWS account. During the sign-up process you grant Upsolver privileges to access your AWS account.
+# Start using Upsolver for free
 
 Upsolver Community is fully resourced; you are not required to supply any compute or storage resources.
 

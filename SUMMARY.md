@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-* [Try Upsolver for free](getting-started/try-upsolver.md)
+* [Start using Upsolver for free](getting-started/try-upsolver.md)
 * [Get started as a Upsolver user](getting-started/start-using-upsolver/README.md)
   * [Upsolver in 5 minutes](getting-started/start-using-upsolver/upsolver-in-10-minutes/README.md)
     * [Upsolver Quickstart in 5 minutes](getting-started/start-using-upsolver/upsolver-in-10-minutes/upsolver-quickstart-in-10-minutes/README.md)
