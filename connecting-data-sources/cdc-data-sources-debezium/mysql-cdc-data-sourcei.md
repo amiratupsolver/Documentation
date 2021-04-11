@@ -28,13 +28,24 @@ For more information about creating such a user see here: [https://debezium.io/d
 
 The binlog must be enabled in `ROW` mode. You can follow these instructions to check if it's enabled and configure it if you are using your own MySQL server: [https://debezium.io/documentation/reference/connectors/mysql.html\#enable-mysql-binlog](https://debezium.io/documentation/reference/connectors/mysql.html#enable-mysql-binlog)
 
-If you are using AWS RDS you will need to:
+If you are using **AWS RDS** you will need to:
 
 1. Make sure that [Automated Backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html) are enabled. If they are not enabled the binlog will be disabled regardless of the parameter group settings.
 2. Change the binlog mode to `ROW` in the parameter group settings for the cluster:
+
    1. Create new parameter group based on the base group that matches your DB version.
    2. Change `BINGLOG_FORMAT` to `ROW`
    3. Change the DB Cluster to use the new parameter group and apply the changes. 
+
+#### Ensure binlog duration is long enough
+
+In order to ensure that the binlog still exists after the snapshot / initial load has completed. Or that it its not missing after some server downtime please ensure the binlog has a minimum retention that is longer than the time it takes to snapshot the database.
+
+Using AWS RDS this can be achieved using the following command: 
+
+> call mysql.rds\_set\_configuration\('binlog retention hours', 24\);
+
+For custom deployments please consult the documentation for your versions of MySQL.
 
 ### Creating a MySQL CDC Data Source
 
