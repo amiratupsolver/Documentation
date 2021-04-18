@@ -6,6 +6,63 @@ description: This article tracks the changes and updates to Upsolver.
 
 ## 2021
 
+### 2021/04/18
+
+* Features
+  * Support `SELECT *` in Hive Metastore Outputs, this will update the table definition every time a new field arrives
+  * Oracle Object Storage Support
+* Bug Fixes
+  * Aggregation calculated fields now works in SQL mode
+
+### 2021/04/04
+
+* Features
+  * CDC \(Capture Data Change\) Data Sources
+  * Dremio and PrestoDB Outputs
+  * Stop/Start Data Sources
+* Enhancements
+  * Allow setting Lazy Load on Lookup Tables using the Properties tab
+  * Update base AMI image in AWS to Amazon Linux 2
+* Bug Fixes
+  * Data Lake Output: Filter out partitions that were deleted due to retention compaction
+
+### 2021/03/28
+
+* Features
+  * Hive Metastore: Allow creating an Output to External Hive Metastore
+* Enhancements
+  * Lower latencies between dependencies in Compute Cluster
+
+### 2021/03/21
+
+* Features
+  * Ahana Output
+  * Starburst Output
+* Enhancements
+  * Redshift: Allow inserting 'now' into date / time fields in order to set a column to the insertion time
+* Bug Fixes
+  * Kinesis Stream Autocomplete filter out Upsolver Internal Streams
+  * Fixed bug in S3 IAM policy generation with slash in end of path
+  * Avro Schema Registry: Don't treat HTTP errors as parse errors
+  * SQL Parser: Don't regenerate the SQL when there is an expression that returns boolean with extra parentheses
+
+### 2021/03/14
+
+* Support Real Time Kafka Output - Support running Kafka Outputs on the Real Time cluster with ms latency
+* Hive Metastore Output with Upserts - fixed a bug that caused the compaction process to get stuck after edit
+* Hive Metastore Output with Upserts - support number as an upsert key
+* Lookup Tables: fixed a bug when using sharded lookup tables in outputs
+* API: show the current capacity when clicking Update Capacity button on Clusters page
+* API: fixed wrong validation on Kafka Outputs \(support numbers on topic names\)
+* Microsoft SQL Server Output: fixed create statement when primary key is empty
+* API: fixed a bug when removing mapping of fields
+
+### 2021/03/07
+
+* S3 Data Source with Parquet Content Format - split files by 200MB
+* Lookup Table - support compaction shards on lookup tables with multiple windows
+* SQL - fixed a bug generating the SQL when "Is Delete Field" is mapped to a column
+
 ### 2021/03/01
 
 * Monitoring: Added three metrics to Hive Metastore Outputs
