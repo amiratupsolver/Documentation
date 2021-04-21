@@ -1,6 +1,6 @@
 # Data types
 
-Open Lake has a set of built-in data types, described below. 
+Upsolver SQL has a set of built-in data types, described below. 
 
 * BOOLEAN
 * INTEGER
