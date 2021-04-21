@@ -15,5 +15,4 @@ description: This page links to both written and video Upsolver tutorials.
 * [Geographic IP features with Upsolver](https://www.youtube.com/watch?v=0PU9cXzr19I&feature=emb_title)
 * [Hierarchical data with Upsolver](https://www.youtube.com/watch?v=ERLg6YEd5OU)
 * [Create lookups](https://www.youtube.com/watch?v=xIygqg6RY58)
-* [Create HTTP data source](https://www.youtube.com/watch?v=SPQh7ot4-n0)
 
