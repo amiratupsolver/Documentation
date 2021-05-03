@@ -6,6 +6,21 @@ description: This article tracks the changes and updates to Upsolver.
 
 ## 2021
 
+### 2021/05/04
+
+* Enhancements
+  * Kafka Output - Allow ignoring messages that are too large \(According to broker settings and producer settings\)
+  * Streaming Data Sources \(Kafka, Kinesis, EventHubs\) - Allow deleting offsets metadata files
+  * API - Performance enhancements when updating Outputs / Lookup Tables
+* Bug Fixes
+  * Hive Metastore: Fixed bug with `SELECT *`
+
+### 2021/05/03
+
+* Features
+  * Support MAX/MIN aggregations on more data types
+  * Support &lt;,&lt;=,&gt;,&gt;= on timestamps
+
 ### 2021/04/18
 
 * Features
