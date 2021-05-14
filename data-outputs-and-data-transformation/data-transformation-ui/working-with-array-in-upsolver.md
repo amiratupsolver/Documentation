@@ -139,7 +139,7 @@ We can see some clues about what is happening if we look at the query we wrote m
 
 ![](../../.gitbook/assets/image%20%28254%29.png)
 
-The reason this calculated field is an array is because it had 2 fields from within an array as inputs, but we chose to **write it outside of the context of the input array.** Meaning we wrote the result to `salaries` in the root of our object. Essentially what we have done is taken our input event and added the calculation like this:
+The reason this calculated field is an array is because it had 2 fields from within an array as inputs, but we chose to **write it outside of the context of the input array.** Meaning we wrote the result to a field named `salary` in the root of our object. Essentially what we have done is taken our input event and added the calculation like this:
 
 ```sql
 {
