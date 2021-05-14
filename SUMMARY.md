@@ -143,6 +143,7 @@
     * [Transforming data with SQL](data-outputs-and-data-transformation/data-transformation-ui/transform-with-sql/transforming-data-with-sql.md)
     * [Aggregate streaming data](data-outputs-and-data-transformation/data-transformation-ui/transform-with-sql/aggregate-streaming-data.md)
     * [Query hierarchical data](data-outputs-and-data-transformation/data-transformation-ui/transform-with-sql/query-hierarchical-data.md)
+  * [Work with Arrays](data-outputs-and-data-transformation/data-transformation-ui/working-with-array-in-upsolver.md)
   * [View outputs](data-outputs-and-data-transformation/data-transformation-ui/viewing-outputs.md)
   * [Create an output](data-outputs-and-data-transformation/data-transformation-ui/creating-an-output/README.md)
     * [Modify an output in SQL](data-outputs-and-data-transformation/data-transformation-ui/creating-an-output/modifying-the-output-in-sql/README.md)
