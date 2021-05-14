@@ -281,10 +281,10 @@ You may use the same output query that was used initially to define the output:
 
 ```sql
 SET salaries = ZIP('employee,baseRate,bonus', data.employee[], data.baseRate[], data.bonus[]);
+SET salaries.salary = salaries[].baseRate + salaries[].bonus;
 SELECT 
-       salaries[].employee AS salaries[].employee,
-       salaries[].baseRate AS salaries[].baseRate,
-       salaries[].bonus AS salaries[].bonus
+       salaries[].employee AS toPay[].employee,
+       salaries[].salary AS toPay[].salary
   FROM "salaries"  
 
 ```
@@ -329,7 +329,7 @@ How do you flatten multiple arrays?
 ```sql
 {
     "values": ["apple", "NY"],
-    "keys": ["fruit", "city"]
+    "type": ["fruit", "city"]
 }
 ```
 
@@ -337,13 +337,13 @@ In this case, if we simply SELECT the arrays:
 
 ```sql
 SELECT data.values[] as value,
-       data.keys[] as key
+       data.type[] as type
    FROM my_data_source
 ```
 
 It will result in a Cartesian Product:
 
-| value | key |
+| value | type |
 | :--- | :--- |
 | apple | fruit |
 | NY | fruit |
@@ -353,15 +353,15 @@ It will result in a Cartesian Product:
 If you have independent arrays being selected without a shared context, it will end up with a Cartesian Product in the output. If you wish to avoid this you must use the `ZIP`function to combine the arrays into a single context:
 
 ```sql
-SET zipped = ZIP('key,value', data.values[], data.keys[]);
+SET zipped = ZIP('type,value', data.type[], data.values[]);
 SELECT zipped[].value as value
-       zipped[].key as key
+       zipped[].type as type
    FROM my_data_source
 ```
 
 The result is as expected: 
 
-| value | key |
+| value | type |
 | :--- | :--- |
 | apple | fruit |
 | NY | city |
@@ -390,7 +390,7 @@ Given this input data:
 }
 ```
 
-Get the following tabular output:
+Try and get the following tabular output:
 
 | unit | value | index |
 | :--- | :--- | :--- |
