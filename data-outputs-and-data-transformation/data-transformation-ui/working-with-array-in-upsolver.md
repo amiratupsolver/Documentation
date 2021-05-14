@@ -12,7 +12,7 @@ The following simple calculation is defined in Upsolver:
 
  `data.value1 + data.value2` 
 
-This is the simplest calculation that you may have and it doesn't involve arrays.  This example being used as the starting point.
+This is the simplest calculation that you may have and it doesn't involve arrays.  This example is being used as the starting point.
 
 If the input looked like :
 
