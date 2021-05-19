@@ -6,6 +6,14 @@ description: This article tracks the changes and updates to Upsolver.
 
 ## 2021
 
+### 2021/05/12
+
+* Enhancements
+  * Added External Hive Metastore to the output types list
+  * Support `SELECT *` on External Hive Metastore when querying with PrestoDB and SparkSQL
+  * Reference Data can now be deleted after output is not using it \(i.e. output deleted or output completed and was edited\)
+  * Reference Data can't be created with the same name as another Reference data or Lookup table
+
 ### 2021/05/04
 
 * Enhancements
