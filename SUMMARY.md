@@ -114,6 +114,7 @@
     * [Amazon Athena data output](data-outputs-and-data-transformation/data-outputs/amazon-aws-data-outputs/amazon-athena-output/README.md)
       * [Quick guide: Athena data output](data-outputs-and-data-transformation/data-outputs/amazon-aws-data-outputs/amazon-athena-output/quick-guide-athena-data-output.md)
       * [Full guide: Athena data output](data-outputs-and-data-transformation/data-outputs/amazon-aws-data-outputs/amazon-athena-output/full-guide-athena-data-output.md)
+      * [Output all data source fields to Amazon Athena](data-outputs-and-data-transformation/data-outputs/amazon-aws-data-outputs/amazon-athena-output/output-all-data-source-fields-to-amazon-athena.md)
     * [Amazon Kinesis data output](data-outputs-and-data-transformation/data-outputs/amazon-aws-data-outputs/amazon-kinesis-output.md)
     * [Amazon Redshift data output](data-outputs-and-data-transformation/data-outputs/amazon-aws-data-outputs/amazon-redshift-output.md)
     * [Amazon Redshift Spectrum data output](data-outputs-and-data-transformation/data-outputs/amazon-aws-data-outputs/redshift-spectrum-output/README.md)
