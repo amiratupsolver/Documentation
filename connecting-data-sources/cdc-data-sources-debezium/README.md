@@ -90,7 +90,7 @@ This example event represents a new row being added to the table. You can tell t
 }
 ```
 
-In this case we received an updated event for the event in Example 1. We can see the old values in "before" and the new updated values in "after".
+In this case we received an updated event for the event in Example 1. We can see the old values in `before` and the new updated values in `after`.
 
 #### Supported Databases
 
@@ -98,8 +98,8 @@ Currently the following databases and versions are supported:
 
 | Database | Version | AWS RDS Supported? |
 | :--- | :--- | :--- |
-| MySql | 8 | Yes |
-| MySql | 5.7 | Yes |
+| MySQL | 8 | Yes |
+| MySQL | 5.7 | Yes |
 
 Some databases may require specific binlog configurations to be used. See the documentation page for creating a CDC data source for your database for info.
 
