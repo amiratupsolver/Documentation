@@ -8,19 +8,19 @@ description: >-
 
 ### Supportability
 
-Currently the following MySQL databases versions are supported: 5.7 and 8. This includes managed DB instances via AWS RDS.
+MySQL database versions 5.6+ are supported. This includes managed DB instances via AWS RDS.
 
 ### Prerequisites
 
 #### Permissions
 
-In order for Upsolver / Debezium to read the binlog and the initial state of the database we require the following permissions:
+In order for Upsolver to read the binlog and the initial state of the database we require the following permissions:
 
 * `SELECT` \(On the tables that are to be loaded, usually all tables\)
 * `REPLICATION CLIENT`
 * `REPLICATION SLAVE`
 * `RELOAD`
-* `SHOW DATABASES`
+* `SHOW DATABASES` \(this is only necessary if the server was started with the --skip-show-database option\)
 
 For more information about creating such a user see here: [https://debezium.io/documentation/reference/connectors/mysql.html\#setting-up-mysql](https://debezium.io/documentation/reference/connectors/mysql.html#setting-up-mysql)
 
@@ -39,7 +39,7 @@ If you are using **AWS RDS** you will need to:
 
 #### Ensure binlog duration is long enough
 
-In order to ensure that the binlog still exists after the snapshot / initial load has completed. Or that it its not missing after some server downtime please ensure the binlog has a minimum retention that is longer than the time it takes to snapshot the database.
+Upsolver constantly reads the binlog's latest events, so generally the binlog retention only needs to be set high enough to handle server interruptions or situations where the data source or compute cluster is paused in Upsolver. It is therefore recommended to set the binlog retention to 1 day, and generally not recommended to set it below 3 hours.
 
 Using AWS RDS this can be achieved using the following command: 
 
@@ -50,17 +50,8 @@ For custom deployments please consult the documentation for your versions of MyS
 ### Creating a MySQL CDC Data Source
 
 1. In the Data Sources page click **New** in the top right hand corner
-2. **Select** MySql \(Debezium\)
-3. **Name** the Data Source
-4. **Select** the **compute cluster** you want the Data Source to run on.  Note: This Compute cluster must have access to the database. If the database has security settings restricting traffic please ensure the compute cluster is using elastic IP's and that they are open in the security settings. Alternatively, you can set up [VPC peering](../../getting-started/upsolver-aws-deployment-guide/vpc-peering.md) between the Upsolver VPC and the VPC hosting the database if the DB does not allow public traffic.
-5. **Select** the **target storage location**. This is the location we will store the raw CDC events that were read from the binlog. 
-6. Optionally set a retention value if you want to keep data only for some period of time. You can always change this later in the properties.
-7. Set the **host name** of the **database**. This is usually a DNS record name pointing the the database. 
-8. Set the **port** for your connection. The default for MySQL is **3306**.
-9. Set the **username** and **password** to connect to the database with. Note: Make sure the user has the permissions listed in the prerequisite section of this page. 
-10. Optional:
-    1. Set a list of regular expressions of databases to include. If left empty all databases will be included. 
-    2. Set a list of regular expressions of databases to exclude. If left empty no databases will be excluded.
-    3. Set a list of regular expressions of tables to **include**. If empty, **all** tables are included.
-    4. Set a list of regular expressions of tables to **exclude**. If empty, **no** tables are excluded.
+2. **Select** MySql from the Change Data Capture group
+3. Fill in the form to select the database to connect to and the list of tables to load.
+4. Optionally fill in a destination database and table prefix. This will replicate the database automatically to the target data lake.
+5. Give a name to your data source. This will be the name of the entity in Upsolver.
 
