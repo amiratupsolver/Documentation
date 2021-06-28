@@ -76,7 +76,7 @@ You may monitor the ingestion progress by clicking on the **CDC Data source &gt;
 
 ![](../../.gitbook/assets/image%20%28264%29.png)
 
-## Creating an Amazon Athena Output to Multiple Tables \(split by key\)
+## Creating an Amazon Athena Output writing to Multiple Tables \(split by key\)
 
 1. Click on OUTPUTS and NEW on the upper right hand corner.
 
