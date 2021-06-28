@@ -14,7 +14,7 @@ MySQL database versions 5.6+ are supported. This includes managed DB instances h
 
 ### Permissions
 
-In order for Upsolver to read the binlog and the initial state of the database the connector requires the following permissions:
+In order for Upsolver to read the binlog and the initial state of the database the CDC data source requires the following permissions:
 
 * `SELECT` \(On the tables that are to be loaded, usually all tables\)
 * `REPLICATION CLIENT`
