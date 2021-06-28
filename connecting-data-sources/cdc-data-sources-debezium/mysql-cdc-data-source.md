@@ -64,11 +64,17 @@ For custom deployments please consult the documentation for your versions of MyS
 
 4. \(Optional\) define destination information. This will replicate the database automatically to the target data lake. TABLE PREFIX will show up as part of your destination table name. For example, if you input `staging_` for a table named `orders`. The destination table name will be `staging_orders` 
 
-![](../../.gitbook/assets/image%20%28267%29.png)
+![](../../.gitbook/assets/image%20%28268%29.png)
 
 5. Give a name to your data source and data output. This will be the name of the entity in Upsolver. Click on **CONTINUE**. 
 
 ![](../../.gitbook/assets/image%20%2818%29.png)
+
+## Monitoring
+
+You may monitor the ingestion progress by clicking on the **CDC Data source &gt; MONITORING &gt; SNAPSHOT STATUS**
+
+![](../../.gitbook/assets/image%20%28264%29.png)
 
 ## Creating an Amazon Athena Output to Multiple Tables \(split by key\)
 
@@ -76,11 +82,11 @@ For custom deployments please consult the documentation for your versions of MyS
 
 2. Select the Athena data output.
 
-![](../../.gitbook/assets/image%20%28264%29.png)
+![](../../.gitbook/assets/image%20%28265%29.png)
 
 3. Give the output a name. Choose the CDC data source that you've defined from the previous section. Make sure to choose **Hierarchical** and click on **NEXT**.
 
-![](../../.gitbook/assets/image%20%28268%29.png)
+![](../../.gitbook/assets/image%20%28269%29.png)
 
 4. Click on the **SQL view** and add the `data.* as *` to your SQL statement. 
 
@@ -96,7 +102,7 @@ For custom deployments please consult the documentation for your versions of MyS
 
 7. Click on RUN on the upper right hand corner
 
-![](../../.gitbook/assets/image%20%28266%29.png)
+![](../../.gitbook/assets/image%20%28267%29.png)
 
 8. Fill out your run parameters and make sure to define TABLE NAME prefix. If the MySQL table is named `orders`, it will show up as `split_orders` in Athena with the example given below. Click on **NEXT**.
 
@@ -104,7 +110,7 @@ For custom deployments please consult the documentation for your versions of MyS
 
 9. Define how you would like to run this deployment. Keep in mind that leaving `ENDING AT` as `Never` will continuously read updates from your MySQL source.
 
-![](../../.gitbook/assets/image%20%28265%29.png)
+![](../../.gitbook/assets/image%20%28266%29.png)
 
 10. Wait for the data to be written to Athena and you're done! 
 
