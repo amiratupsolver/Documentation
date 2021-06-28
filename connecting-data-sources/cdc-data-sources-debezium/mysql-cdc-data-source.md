@@ -70,7 +70,7 @@ For custom deployments please consult the documentation for your versions of MyS
 
 ![](../../.gitbook/assets/image%20%2818%29.png)
 
-## Creating an Amazon Athena Output to Multiple Tables \(key based\)
+## Creating an Amazon Athena Output to Multiple Tables \(split by key\)
 
 1. Click on OUTPUTS and NEW on the upper right hand corner.
 
