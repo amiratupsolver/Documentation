@@ -53,7 +53,7 @@ Leave the **Custom Token** field empty to use a system-generated token.
 You can edit a lookup table alias, but you cannot modify the custom token.
 {% endhint %}
 
-1. From the **Aliases page**, click the pencil icon![](../../../.gitbook/assets/image%20%2824%29.png).
+1. From the **Aliases page**, click the pencil icon![](../../../.gitbook/assets/image%20%2824%29%20%281%29.png).
 
 2. Edit the desired alias details:
 

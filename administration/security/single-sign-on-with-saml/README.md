@@ -63,7 +63,7 @@ There are no default policies for SAML provisioned groups, so users only have pe
 10. Select the **Groups** tab. The **SAML Provisioned Group** should appear.   
 This appears as a **group name** if you are using **Active Directory**, otherwise this appears as a **group ID**.
 
-11. Click the pencil icon ![](../../../.gitbook/assets/image%20%2824%29.png) to edit the group, and click **Add Policy** to add any required Upsolver policies.   
+11. Click the pencil icon ![](../../../.gitbook/assets/image%20%2824%29%20%281%29.png) to edit the group, and click **Add Policy** to add any required Upsolver policies.   
 **See:** [Identity and access management](../identity-and-access-management/)
 
 12. \(Optional\) To lock down Upsolver to only allow SAML sign on, click **More &gt; SAML** and select **Allow Only SAML Sign On**.

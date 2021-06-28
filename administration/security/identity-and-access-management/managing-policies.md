@@ -83,7 +83,7 @@ For details regarding specific permissions, see: [Permissions list](../../../get
 
 ## **Edit a policy**
 
-1. From the **IAM** page, in the **Policies** tab, click the pencil icon![](../../../.gitbook/assets/image%20%2824%29.png) in the row of the policy to edit.
+1. From the **IAM** page, in the **Policies** tab, click the pencil icon![](../../../.gitbook/assets/image%20%2824%29%20%281%29.png) in the row of the policy to edit.
 
 2. In the **Policy** area, click **Edit**.
 
@@ -93,7 +93,7 @@ For details regarding specific permissions, see: [Permissions list](../../../get
 
 ## **Delete a policy**
 
-1. From the **IAM** page, in the **Policies** tab, click the pencil icon![](../../../.gitbook/assets/image%20%2824%29.png) in the row of the policy to delete.
+1. From the **IAM** page, in the **Policies** tab, click the pencil icon![](../../../.gitbook/assets/image%20%2824%29%20%281%29.png) in the row of the policy to delete.
 
 2. Click **Delete**. A confirmation message will appear. 
 

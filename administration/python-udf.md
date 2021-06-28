@@ -33,7 +33,7 @@ A pane will appear on the right where you can select input parameters from an ex
 
 ## Rename a Python/PMML function
 
-1. On the **Python UDF** page, click the pencil icon![](../.gitbook/assets/image%20%2824%29.png).
+1. On the **Python UDF** page, click the pencil icon![](../.gitbook/assets/image%20%2824%29%20%281%29.png).
 
 2. Modify the **name** as desired.
 

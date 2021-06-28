@@ -22,7 +22,7 @@ There are three default groups and policies, but you can also add additional gro
 
 3. Click **Create**. A new group will be added to the list.
 
-4. Click the pencil icon![](../../../.gitbook/assets/image%20%2824%29.png) to edit the group.
+4. Click the pencil icon![](../../../.gitbook/assets/image%20%2824%29%20%281%29.png) to edit the group.
 
 5. Under **Users**, click **Add User**. Select the desired users and then click **Apply**.
 
@@ -30,7 +30,7 @@ There are three default groups and policies, but you can also add additional gro
 
 ## **Edit a group**
 
-1. From the **IAM** page, in the **Groups** tab, click the pencil icon![](../../../.gitbook/assets/image%20%2824%29.png) to edit the group.
+1. From the **IAM** page, in the **Groups** tab, click the pencil icon![](../../../.gitbook/assets/image%20%2824%29%20%281%29.png) to edit the group.
 
 2. Under **Users**, click **Add User**. Select the desired users and then click **Apply**.
 

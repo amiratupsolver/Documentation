@@ -48,7 +48,7 @@ Keep in mind that everything written in SQL will be automatically translated in 
 
 3. Use **`TO_NUMBER`** to convert **`STRING`** to **`NUMBER`** for calculation.
 
-![](../../../../.gitbook/assets/image%20%2869%29%20%281%29.png)
+![](../../../../.gitbook/assets/image%20%2869%29%20%281%29%20%281%29.png)
 
 4. Use **`||`** to concatenate values from two fields together.
 

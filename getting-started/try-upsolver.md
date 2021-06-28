@@ -14,7 +14,7 @@ You can also use Upsolver through [AWS Marketplace](https://aws.amazon.com/marke
 
 1. Go to [https://app.upsolver.com/signup/](https://app.upsolver.com/signup/)
 
-![](../.gitbook/assets/image%20%28241%29.png)
+![](../.gitbook/assets/image%20%28142%29%20%281%29.png)
 
 2. Enter your contact details and click **Sign Up**. An email message will be sent to the email account specified for verification.
 

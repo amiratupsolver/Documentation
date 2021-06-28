@@ -139,13 +139,13 @@ SELECT PARTITION_TIME(partition_date) AS partition_date:TIMESTAMP,
 
 4. The output will take about _**1-2 minutes**_ to catchup to its current event. After the data is caught up under **PROGRESS**, click on **ERRORS** to make sure everything is successful. 
 
-![](../../../../.gitbook/assets/rgvgcj1ijn%20%281%29.gif)
+![](../../../../.gitbook/assets/rgvgcj1ijn%20%281%29%20%281%29.gif)
 
 ### Explore transformed data in Open Lake worksheets
 
 1. Click the **CREATE WORKSHEET** button on the upper right hand corner to start exploring the data that you've transformed and written to a table.
 
-![](../../../../.gitbook/assets/rgvgcj1ijn%20%281%29%20%281%29.gif)
+![](../../../../.gitbook/assets/rgvgcj1ijn%20%281%29%20%281%29%20%281%29.gif)
 
 2. Expand the **upsolver** catalog and choose the **sample\_data** schema. Click on the **&lt;table name&gt;** you've written to \(from the step 1\). You will see a sample of of your transformed data!
 
