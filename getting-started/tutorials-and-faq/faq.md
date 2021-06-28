@@ -36,7 +36,7 @@ description: This page contains a directory of Uposlver FAQs.
   * [How does compaction work?](faq.md#how-does-compaction-work)
   * [How does Upsolver handle failures?](faq.md#how-does-upsolver-handle-failures)
   * [Can Upsolver be used in a timer-based use case     ?](faq.md#can-upsolver-be-used-in-a-timer-based-use-case)
-  * Does Upsolver support change data capture \(CDC\) from databases running on-prem or the cloud?
+  * [Does Upsolver support change data capture \(CDC\) from databases running on-prem or the cloud?](https://docs.upsolver.com/upsolver-1/getting-started/tutorials-and-faq/faq#does-upsolver-support-change-data-capture-cdc-from-databases-running-on-prem-or-the-cloud)
 * \*\*\*\*[**Upsolver on AWS**](faq.md#upsolver-on-aws)\*\*\*\*
   * [Can you use Upsolver to join multiple Kinesis streams?](faq.md#can-you-use-upsolver-to-join-multiple-kinesis-streams)
   * [How do I select which metadata and model to query on S3?](faq.md#how-do-i-select-which-metadata-and-model-to-query-on-s-3)
