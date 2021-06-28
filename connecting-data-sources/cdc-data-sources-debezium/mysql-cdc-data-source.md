@@ -8,7 +8,7 @@ description: >-
 
 ## Supportability
 
-MySQL database versions 5.6+ are supported. This includes managed DB instances via AWS RDS.
+MySQL database versions 5.6+ are supported. This includes managed DB instances hosted by AWS RDS.
 
 ## Prerequisites
 
