@@ -36,6 +36,7 @@ description: This page contains a directory of Uposlver FAQs.
   * [How does compaction work?](faq.md#how-does-compaction-work)
   * [How does Upsolver handle failures?](faq.md#how-does-upsolver-handle-failures)
   * [Can Upsolver be used in a timer-based use case     ?](faq.md#can-upsolver-be-used-in-a-timer-based-use-case)
+  * Does Upsolver support change data capture \(CDC\) from databases running on-prem or the cloud?
 * \*\*\*\*[**Upsolver on AWS**](faq.md#upsolver-on-aws)\*\*\*\*
   * [Can you use Upsolver to join multiple Kinesis streams?](faq.md#can-you-use-upsolver-to-join-multiple-kinesis-streams)
   * [How do I select which metadata and model to query on S3?](faq.md#how-do-i-select-which-metadata-and-model-to-query-on-s-3)
@@ -275,6 +276,10 @@ Upsolver offers unique end-to-end integration with Amazon Athena. Tables are cre
 Upsolver continuously optimizes your S3 storage to ensure high query performance in Athena. 
 
 We start with 1-minute Parquet files \(for latency reasons\) and compact the files into bigger files for performance. Upsolver will keep the table data consistent using the Glue Data Catalog.
+
+### Does Upsolver support change data capture \(CDC\) from databases running on-prem or the cloud?
+
+Yes. Upsolver provides built-in [CDC connectors](../../connecting-data-sources/cdc-data-sources-debezium/mysql-cdc-data-source.md) that allows users to stream CDC data from databases to their data lake.
 
 ## Under the hood
 
