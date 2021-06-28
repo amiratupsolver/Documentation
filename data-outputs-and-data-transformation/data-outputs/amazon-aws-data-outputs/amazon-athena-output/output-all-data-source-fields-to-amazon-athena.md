@@ -11,7 +11,7 @@ description: >-
 Sometimes it is necessary to read a large number of fields from a data source and write these fields to Athena without any transformations.
 
 {% hint style="info" %}
-This feature works well with a [CDC data source](../../../../connecting-data-sources/cdc-data-sources-debezium/mysql-cdc-data-sourcei.md).
+This feature works well with a [CDC data source](../../../../connecting-data-sources/cdc-data-sources-debezium/mysql-cdc-data-source.md).
 {% endhint %}
 
 ## Create Amazon Athena output
