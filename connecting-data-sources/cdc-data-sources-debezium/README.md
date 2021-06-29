@@ -98,8 +98,7 @@ Currently the following databases and versions are supported:
 
 | Database | Version | AWS RDS Supported? |
 | :--- | :--- | :--- |
-| MySQL | 8 | Yes |
-| MySQL | 5.7 | Yes |
+| MySQL | 5.6+ | Yes |
 
 Some databases may require specific binlog configurations to be used. See the documentation page for creating a CDC data source for your database for info.
 
