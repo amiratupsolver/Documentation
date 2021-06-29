@@ -14,7 +14,7 @@ Debezium is an open source distributed platform for change data capture. Start i
 
 ### CDC Data Sources
 
-Upsolver supports ingesting CDC data from relational databases such as MySQL or PostgreSQL. Upsolver provides CDC capabilities by running a [Debezium Engine](https://debezium.io/documentation/reference/development/engine.html) under the hood to connect to the databases binlog or WAL. The connectors automatically detect and ingest any change.
+Upsolver supports ingesting CDC data from relational databases such as MySQL and MariaDB. Upsolver provides CDC capabilities by running a [Debezium Engine](https://debezium.io/documentation/reference/development/engine.html) under the hood to connect to the databases binlog . The connectors automatically detect and ingest any change.
 
 #### Event Format
 
