@@ -279,7 +279,7 @@ We start with 1-minute Parquet files \(for latency reasons\) and compact the fil
 
 ### Does Upsolver support change data capture \(CDC\) from databases running on-prem or the cloud?
 
-Yes. Upsolver provides built-in [CDC connectors](../../connecting-data-sources/cdc-data-sources-debezium/mysql-cdc-data-source.md) that allows users to stream CDC data from databases to their data lake.
+Yes. Upsolver provides built-in [CDC connectors](../../connecting-data-sources/cdc-data-sources-debezium/mysql-cdc-data-source.md) that allow users to stream CDC data from databases to their data lake.
 
 ## Under the hood
 
