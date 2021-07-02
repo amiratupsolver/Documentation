@@ -6,6 +6,69 @@ description: This article tracks the changes and updates to Upsolver.
 
 ## 2021
 
+### 
+
+### 2021/06/28
+
+* Enhancements
+  * Added new modal and new SQL syntax for Table Name Suffix Field, which allow you to create multi tables in Hive Metastore output with a single output.
+  * CDC Data source \(MySQL\) - added Destination part that allows replicating the source database to your data lake
+  * Qubole Metastore: allow changing the time partition column type to String
+* Bug Fixes
+  * Fixed health check parameters in Query clusters
+  * Don't show deleting data sources in the main page
+  * Hive Metastore output: added a cache layer in the Partition Manager that prevents redundant calls to the Metastore
+  * API: Limit number of running previews. This should fix high CPU usage of the API when many previews are running in the same time.
+
+### 2021/06/21
+
+* Enhancements
+  * Support Select \* in Redshift Spectrum
+  * API: Support Select \* and Upserts on Preview
+  * Lookup Table: when running Output with a lookup to a Lookup Table, don't calculate the start/end times of the Lookup Table implicitly but use the original times.
+* Bug Fixes
+  * SAML: Don't regenerate group when changing display name in Upsolver
+  * Athena Output: fixed bug in Columns Retention
+  * API: Fixed a bug that caused deleted inputs to not work
+  * Snowflake Output: fixed columns casing
+  * Removed "errors" outputs from outputs with Parquet format \(Athena/S3\)
+
+### 2021/06/13
+
+* Enhancements
+  * CDC ingestion is more stable when scaling cluster
+  * Previewing outputs now considers the upsert definition of it
+  * Compactions are now prioritized by urgency and age in order to prevent starvation
+  * Support epoch time date pattern with prefixes in Cloud Storage Data Sources
+* Bug Fixes
+  * Fixed database name validation in Microsoft SQL Server Connection
+
+### 2021/06/07
+
+* Enhancements
+  * HiveMetastoreClient: Better SET LOCATION method
+
+### 2021/05/31
+
+* Enhancements
+  * Elasticsearch Output: Support Upsert Keys
+  * CDC: Support Column Exclude List
+  * Added `SHA512` and `SHA3_512` functions
+* Bug Fixes
+  * S3 Connection with SQS now works with paths that ends with slash
+
+### 2021/05/24
+
+* Enhancements
+  * Added FROM\_UNIXTIME function
+  * Qubole Output: added an option to support changing column types
+  * Hive Metastore Outputs: trigger more than one compaction if there is a backlog
+  * Upsolver Output: support new field type: JSON. This type will be extracted when using as an Upsolver Data Source
+  * CSV Content Format: support custom quote escape char
+  * When duplicating output, copy the workspaces from the previous output
+* Bug Fixes
+  * Fixed memory leak in External Hive Metastore outputs
+
 ### 2021/05/12
 
 * Enhancements
