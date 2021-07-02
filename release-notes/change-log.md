@@ -6,8 +6,6 @@ description: This article tracks the changes and updates to Upsolver.
 
 ## 2021
 
-### 
-
 ### 2021/06/28
 
 * Enhancements
