@@ -6,6 +6,27 @@ description: This article tracks the changes and updates to Upsolver.
 
 ## 2021
 
+### 2021/07/11
+
+* Enhancements
+  * Monitoring Reporters: Support Graphite
+  * Hive Metastore Output: support splitting the output by schemas/databases in addition to splitting by table names. For example, if the value of the multi table field is "foo.bar", the "foo" will be the schema/database name, and "bar" will be the table name
+* Bug Fixes
+  * S3 Data Sources Advanced: Fixed a bug with Glob File Name pattern
+  * Hive Metastore Output: save storage by deleting manifest files after their usage
+
+### 2021/07/05
+
+* Enhancements
+  * Athena output: create Views with Glue API
+* Bug Fixes
+  * Don't show completed dependencies in Lineage tab
+  * Select \* in Hive Metastore Output
+    * Return the defined fields first
+    * Removed the multi table column from the view definitions
+  * Hive Metastore Output: fixed a bug when editing output with upserts
+  * API: Allow changing the cluster size on Trial plans
+
 ### 2021/06/28
 
 * Enhancements
