@@ -6,6 +6,20 @@ description: This article tracks the changes and updates to Upsolver.
 
 ## 2021
 
+### 2021/07/19
+
+* Bug Fixes
+  * API
+    * Fixed a bug with Azure Integration not working in some regions
+    * Fixed validation when updating Columns Retention in Hive Metastore outputs
+    * Data Source Page: don't show statistics from the preview when querying on a time range without data
+    * Show output's fields on outputs with SELECT \*
+  * SQL
+    * Prevent SQL regeneration when updating duplicate handling \(APPEND ON DUPLICATE or REPLACE ON DUPLICATE\)
+    * Added some validation errors when trying to create invalid state
+  * Backend
+    * Fixed a bug that caused duplicated rows when editing Hive Metastore output with upserts
+
 ### 2021/07/11
 
 * Enhancements
