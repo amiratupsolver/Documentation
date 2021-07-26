@@ -20,11 +20,9 @@ description: >-
 **See:** [Elasticsearch connection string](https://help.compose.com/docs/elasticsearch-connecting-to-elasticsearch)
 {% endhint %}
 
-2. Enter your MySQL database **username**.
+2. \(Optional\) Enter the corresponding **password**.
 
-3. \(Optional\) Enter the corresponding **password**.
+3. **Name** this connection.
 
-4. **Name** this connection.
-
-5. \(Optional\) Enter in the number of **concurrent connections**.
+4. \(Optional\) Enter in the number of **concurrent connections**.
 
