@@ -60,6 +60,8 @@ To modify a property, simply go to the **Properties** tab and click on the penci
 | :--- | :--- |
 | **Shards \#** | The number of independent shards to write, to increase parallelism and reduce latency. This should remain 1 in most cases, and should never be larger than the number of shards of the data sources. |
 | **Output Shards \#** | Set the number of files to be created each interval in the output. This applies only to aggregated outputs \(for non-aggregated outputs, the Shards configuration has this effect\). |
+| **Upsert Partition Fields** | Determines weather or not the partitions fields will be included as part of the Upsert Key. Enable this for improved performance if updated records always reside in the same partition.  |
+| **Allow Not Partitioned Table** | Enable this feature to allow writing to a table that is not partitioned time. It is highly recommended to partition by time unless you are always going to be querying across all partitions.  |
 | **Compaction Shards \#** | The number of files that can be compacted in parallel during a compaction. |
 
 ## Display Data
