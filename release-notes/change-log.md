@@ -6,6 +6,16 @@ description: This article tracks the changes and updates to Upsolver.
 
 ## 2021
 
+### 2021/08/02
+ 
+* Enhancements
+    * Support dynamic position in ELEMENT_AT function.
+    * Allow updating the boot script in Clusters.
+    * Support fixed schema in S3 outputs with Avro format. 
+* Bug Fixes
+    * Fixed a bug when reading from multiple topics in Kafka Data Source.
+    * API - Fixed column name suggester when mapping new fields in Athena Output.
+
 ### 2021/07/19
 
 * Bug Fixes
